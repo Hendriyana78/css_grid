@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan CSS GRID</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Viga&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <header class="header">
+            <div class="hero">
+                <h2 class="heading">HendriYana</h2>
+                <p class="sub heading">Baju dan Celana</p>
+            </div>
+            <div class="features feature-1">
+                <h4 class="harga">IDR 200K</h4>
+                <p class="item">Baju</p>
+            </div>
+            <div class="features feature-2">
+                <h4 class="harga">IDR 100K</h4>
+                <p class="item">Celana</p>
+            </div>
+        </header>
+        <nav class="menu">
+            <div class="menu-toggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="brand">
+                <h1>HendriShop</h1>
+            </div>
+            <ul class="menu-list">
+                <li><a href="">home</a></li>
+                <li><a href="">about</a></li>
+                <li><a href="">products</a></li>
+                <li><a href="#galery">galery</a></li>
+            </ul>
+        </nav>
+
+        <section class="services">
+            <div class="service">
+                <div class="icon">T</div>
+                <h3>Tutorial</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, vitae?</p>
+            </div>
+            <div class="service">
+                <div class="icon">OC</div>
+                <h3>Online Course</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, vitae?</p>
+            </div>
+            <div class="service">
+                <div class="icon">BC</div>
+                <h3>Broad Case</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, vitae?</p>
+            </div>
+            <div class="service">
+                <div class="icon">B</div>
+                <h3>Baju</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, vitae?</p>
+            </div>
+        </section>
+        <section class="galery" id="galery">
+            <h2>Galery</h2>
+            <img src="https://source.unsplash.com/random/201x201" alt="">
+            <img src="https://source.unsplash.com/random/202x202" alt="">
+            <img src="https://source.unsplash.com/random/203x203" alt="">
+            <img src="https://source.unsplash.com/random/204x204" alt="">
+            <img src="https://source.unsplash.com/random/205x205" alt="">
+            <img src="https://source.unsplash.com/random/206x206" alt="">
+            <img src="https://source.unsplash.com/random/207x207" alt="">
+            <img src="https://source.unsplash.com/random/208x208" alt="">
+            <img src="https://source.unsplash.com/random/209x209" alt="">
+            <img src="https://source.unsplash.com/random/2010x2010" alt="">
+        </section>
+    </div>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle input');
+        const nav = document.querySelector('nav ul');
+
+        menuToggle.addEventListener('click', function () {
+            nav.classList.toggle('slide');
+        });
+    </script>
+</body>
+
+</html>
